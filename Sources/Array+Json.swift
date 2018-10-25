@@ -2,7 +2,7 @@
 //  Array+Json.swift
 //  Djingo
 //
-//  Created by vdh on 25/10/2018.
+//  Created by DT on 25/10/2018.
 //  Copyright © 2018 devrap. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 
 extension Array where Element: Encodable {
     
-    var jsonArray: [[String: Any]]? {
+    public var jsonArray: [[String: Any]]? {
         let jsonArray = self.compactMap { elt -> [String: Any]? in
             return elt.jsonDict
         }
@@ -33,7 +33,7 @@ extension Array {
         insert(newElement, at: 0)
     }
     
-    var indexedDictionary: [Int: Element] {
+    public var indexedDictionary: [Int: Element] {
         var result: [Int: Element] = [:]
         enumerated().forEach { (entry: (offset: Int, element: Element)) in
             result[entry.offset] = entry.element

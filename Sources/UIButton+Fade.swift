@@ -11,7 +11,7 @@ import UIKit
 
 extension UIButton {
     
-    func changeTitleWithFade(newText:String) {
+    public func changeTitleWithFade(newText:String) {
         self.fadeOut(duration: 0.3, delay: 0) { (true) in
             self.setTitle(newText, for: UIControl.State.normal)
             self.fadeIn(duration: 0.3, delay: 0) {(true) in
@@ -20,7 +20,7 @@ extension UIButton {
         }
     }
     
-    func changeAction(target:Any, theSelector:Selector) {
+    public func changeAction(target:Any, theSelector:Selector) {
         self.removeTarget(nil, action: nil, for: .allEvents)
         self.addTarget(target, action: theSelector, for: UIControl.Event.touchUpInside)
     }

@@ -10,26 +10,27 @@ import Foundation
 
 extension String {
     
-    func contains(find: String) -> Bool{
+    public func contains(find: String) -> Bool{
         return self.range(of: find) != nil
     }
-    func containsIgnoringCase(find: String) -> Bool{
+    
+    public func containsIgnoringCase(find: String) -> Bool{
         return self.range(of: find, options: .caseInsensitive) != nil
     }
     
-    var urlEscaped: String {
+    public var urlEscaped: String {
         return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
     }
     
-    var utf8Encoded: Data {
+    public var utf8Encoded: Data {
         return data(using: .utf8)!
     }
     
-    var withoutSpecialCharacters: String {
+    public var withoutSpecialCharacters: String {
         return self.components(separatedBy: CharacterSet.symbols).joined(separator: "")
     }
 
-    func matchingStrings(regex: String) -> [[String]] {
+    public func matchingStrings(regex: String) -> [[String]] {
         guard let regex = try? NSRegularExpression(pattern: regex, options: []) else { return [] }
         let nsString = self as NSString
         let results  = regex.matches(in: self, options: [], range: NSMakeRange(0, nsString.length))
@@ -41,7 +42,7 @@ extension String {
         }
     }
     
-    func slice(from: String, to: String) -> String? {
+    public func slice(from: String, to: String) -> String? {
         
         return (range(of: from)?.upperBound).flatMap { substringFrom in
             (range(of: to, range: substringFrom..<endIndex)?.lowerBound).map { substringTo in
@@ -50,7 +51,7 @@ extension String {
         }
     }
     
-    static func makeSlashText(_ text:String) -> NSAttributedString {
+    public static func makeSlashText(_ text:String) -> NSAttributedString {
         
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: text)
         attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))

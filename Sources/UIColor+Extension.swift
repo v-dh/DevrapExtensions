@@ -9,11 +9,11 @@ import UIKit
 
 public extension UIColor {
 
-    convenience init(hex: Int) {
+    public convenience init(hex: Int) {
         self.init(hex: hex, alpha: 1)
     }
 
-    convenience init(hex: Int, alpha: Double) {
+    public convenience init(hex: Int, alpha: Double) {
         self.init(red: CGFloat((hex >> 16) & 0xff) / 255, green: CGFloat((hex >> 8) & 0xff) / 255, blue: CGFloat(hex & 0xff) / 255, alpha: CGFloat(alpha))
     }
 
@@ -43,13 +43,13 @@ public extension UIColor {
         return true
     }
 
-    class var gooseGrey: UIColor { return UIColor(hex: 0xD8D8D8) }
-    class var lightDimGrey: UIColor { return UIColor(hex: 0x4C4C4C) } //main text
-    class var lightCoral: UIColor { return UIColor(hex: 0xDC6474) } //error
+    public class var gooseGrey: UIColor { return UIColor(hex: 0xD8D8D8) }
+    public class var lightDimGrey: UIColor { return UIColor(hex: 0x4C4C4C) } //main text
+    public class var lightCoral: UIColor { return UIColor(hex: 0xDC6474) } //error
 
     // Check Deposit Status
-    class var lightOrange: UIColor { return UIColor(hex: 0xF5A623) }
-    class var orangeOfficial: UIColor { return UIColor(hex: 0xFF7900) }
-    class var indianRed: UIColor { return UIColor(hex: 0xDD6676) }
-    class var lightAquaMarine: UIColor { return UIColor(hex: 0x28C3A9) }
+    public class var lightOrange: UIColor { return UIColor(hex: 0xF5A623) }
+    public class var orangeOfficial: UIColor { return UIColor(hex: 0xFF7900) }
+    public class var indianRed: UIColor { return UIColor(hex: 0xDD6676) }
+    public class var lightAquaMarine: UIColor { return UIColor(hex: 0x28C3A9) }
 }

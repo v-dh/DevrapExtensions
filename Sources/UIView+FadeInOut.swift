@@ -10,19 +10,20 @@ import Foundation
 import UIKit
 
 extension UIView {
-        func fadeIn(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
-            UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
+    
+    public func fadeIn(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 self.alpha = 1.0
             }, completion: completion)
         }
         
-        func fadeOut(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-            UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
+    public func fadeOut(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 self.alpha = 0.0
             }, completion: completion)
         }
     
-    var parentViewController: UIViewController? {
+    public var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
         while parentResponder != nil {
             parentResponder = parentResponder!.next
@@ -33,7 +34,7 @@ extension UIView {
         return nil
     }
     
-    func addShadow(offset: CGSize, color: UIColor, radius: CGFloat, opacity: Float) {
+    public func addShadow(offset: CGSize, color: UIColor, radius: CGFloat, opacity: Float) {
         layer.masksToBounds = false
         layer.shadowOffset = offset
         layer.shadowColor = color.cgColor
@@ -46,11 +47,11 @@ extension UIView {
     }
     
     // AdSubview for mainPage
-    func addSubviewWithFullSizeConstraints(view : UIView) {
+    public func addSubviewWithFullSizeConstraints(view : UIView) {
         insertSubviewWithFullSizeConstraints(view: view, atIndex: subviews.count)
     }
     
-    func insertSubviewWithFullSizeConstraints(view : UIView, atIndex: Int) {
+    public func insertSubviewWithFullSizeConstraints(view : UIView, atIndex: Int) {
         view.translatesAutoresizingMaskIntoConstraints = false
         insertSubview(view, at: atIndex)
         

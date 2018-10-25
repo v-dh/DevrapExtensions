@@ -11,14 +11,14 @@ import UIKit
 
 extension UIImageView {
     
-    func displayImageWithFade(imageName:String) {
+    public func displayImageWithFade(imageName:String) {
         self.fadeOut(duration: 0.5, delay: 0) { (true) in
             self.image = UIImage(named: imageName)
             self.fadeIn()
         }
     }
     
-    func sizeToImage() {
+    public func sizeToImage() {
         //Grab loc
         let xC = self.center.x;
         let yC = self.center.y;
