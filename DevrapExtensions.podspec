@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "v_dh" => "vincent.dhalluin@gmail.com" }
   s.platform     = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
   s.source       = { :git => "git@github.com:v-dh/DevrapExtensions.git" }
   s.source_files  = "Sources/"
