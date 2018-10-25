@@ -8,12 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		6908DC572181C39B002961FA /* DevrapExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6908DC552181C39B002961FA /* DevrapExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6908DC732181DD5F002961FA /* String+Contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC672181DD5F002961FA /* String+Contains.swift */; };
+		6908DC742181DD5F002961FA /* NSMutableAttributedString+SetColorForText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC682181DD5F002961FA /* NSMutableAttributedString+SetColorForText.swift */; };
+		6908DC752181DD5F002961FA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC692181DD5F002961FA /* UIColor+Extension.swift */; };
+		6908DC762181DD5F002961FA /* UILabel+MultiColorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6A2181DD5F002961FA /* UILabel+MultiColorText.swift */; };
+		6908DC772181DD5F002961FA /* UIView+FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6B2181DD5F002961FA /* UIView+FadeInOut.swift */; };
+		6908DC782181DD5F002961FA /* UIImageView+fadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6C2181DD5F002961FA /* UIImageView+fadeInOut.swift */; };
+		6908DC792181DD5F002961FA /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6D2181DD5F002961FA /* Storyboardable.swift */; };
+		6908DC7A2181DD5F002961FA /* UIButton+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6E2181DD5F002961FA /* UIButton+Fade.swift */; };
+		6908DC7B2181DD5F002961FA /* Array+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC6F2181DD5F002961FA /* Array+Json.swift */; };
+		6908DC7C2181DD5F002961FA /* Dictionnary+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC702181DD5F002961FA /* Dictionnary+Merge.swift */; };
+		6908DC7D2181DD5F002961FA /* UIViewController+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC712181DD5F002961FA /* UIViewController+Transitions.swift */; };
+		6908DC7E2181DD5F002961FA /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC722181DD5F002961FA /* CAGradientLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6908DC522181C39B002961FA /* DevrapExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DevrapExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6908DC552181C39B002961FA /* DevrapExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevrapExtensions.h; sourceTree = "<group>"; };
 		6908DC562181C39B002961FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6908DC672181DD5F002961FA /* String+Contains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Contains.swift"; sourceTree = "<group>"; };
+		6908DC682181DD5F002961FA /* NSMutableAttributedString+SetColorForText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SetColorForText.swift"; sourceTree = "<group>"; };
+		6908DC692181DD5F002961FA /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6908DC6A2181DD5F002961FA /* UILabel+MultiColorText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+MultiColorText.swift"; sourceTree = "<group>"; };
+		6908DC6B2181DD5F002961FA /* UIView+FadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FadeInOut.swift"; sourceTree = "<group>"; };
+		6908DC6C2181DD5F002961FA /* UIImageView+fadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+fadeInOut.swift"; sourceTree = "<group>"; };
+		6908DC6D2181DD5F002961FA /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		6908DC6E2181DD5F002961FA /* UIButton+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Fade.swift"; sourceTree = "<group>"; };
+		6908DC6F2181DD5F002961FA /* Array+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Json.swift"; sourceTree = "<group>"; };
+		6908DC702181DD5F002961FA /* Dictionnary+Merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionnary+Merge.swift"; sourceTree = "<group>"; };
+		6908DC712181DD5F002961FA /* UIViewController+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Transitions.swift"; sourceTree = "<group>"; };
+		6908DC722181DD5F002961FA /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +54,7 @@
 		6908DC482181C39B002961FA = {
 			isa = PBXGroup;
 			children = (
+				6908DC662181DD5F002961FA /* Sources */,
 				6908DC542181C39B002961FA /* DevrapExtensions */,
 				6908DC532181C39B002961FA /* Products */,
 			);
@@ -50,6 +75,25 @@
 				6908DC562181C39B002961FA /* Info.plist */,
 			);
 			path = DevrapExtensions;
+			sourceTree = "<group>";
+		};
+		6908DC662181DD5F002961FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6908DC672181DD5F002961FA /* String+Contains.swift */,
+				6908DC682181DD5F002961FA /* NSMutableAttributedString+SetColorForText.swift */,
+				6908DC692181DD5F002961FA /* UIColor+Extension.swift */,
+				6908DC6A2181DD5F002961FA /* UILabel+MultiColorText.swift */,
+				6908DC6B2181DD5F002961FA /* UIView+FadeInOut.swift */,
+				6908DC6C2181DD5F002961FA /* UIImageView+fadeInOut.swift */,
+				6908DC6D2181DD5F002961FA /* Storyboardable.swift */,
+				6908DC6E2181DD5F002961FA /* UIButton+Fade.swift */,
+				6908DC6F2181DD5F002961FA /* Array+Json.swift */,
+				6908DC702181DD5F002961FA /* Dictionnary+Merge.swift */,
+				6908DC712181DD5F002961FA /* UIViewController+Transitions.swift */,
+				6908DC722181DD5F002961FA /* CAGradientLayer.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +174,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6908DC752181DD5F002961FA /* UIColor+Extension.swift in Sources */,
+				6908DC7B2181DD5F002961FA /* Array+Json.swift in Sources */,
+				6908DC772181DD5F002961FA /* UIView+FadeInOut.swift in Sources */,
+				6908DC7E2181DD5F002961FA /* CAGradientLayer.swift in Sources */,
+				6908DC7D2181DD5F002961FA /* UIViewController+Transitions.swift in Sources */,
+				6908DC7C2181DD5F002961FA /* Dictionnary+Merge.swift in Sources */,
+				6908DC792181DD5F002961FA /* Storyboardable.swift in Sources */,
+				6908DC7A2181DD5F002961FA /* UIButton+Fade.swift in Sources */,
+				6908DC782181DD5F002961FA /* UIImageView+fadeInOut.swift in Sources */,
+				6908DC742181DD5F002961FA /* NSMutableAttributedString+SetColorForText.swift in Sources */,
+				6908DC732181DD5F002961FA /* String+Contains.swift in Sources */,
+				6908DC762181DD5F002961FA /* UILabel+MultiColorText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
