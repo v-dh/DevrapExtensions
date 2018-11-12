@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol Storyboardable: class {
+public protocol Storyboardable: class {
     static var defaultStoryboardName: String { get }
 }
 
-extension Storyboardable where Self: UIViewController {
+public extension Storyboardable where Self: UIViewController {
     static var defaultStoryboardName: String {
         return String(describing: self)
     }

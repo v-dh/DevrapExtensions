@@ -1,7 +1,7 @@
 #  Be sure to run `pod spec lint DevrapExtensions.podspec --allow-warnings' to ensure this is a
 Pod::Spec.new do |s|
   s.name         = "DevrapExtensions"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "DevrapExtensions."
   s.description  = <<-DESC 
                     Computes the meaning of life. Features: 1. Is self aware ... 42. Likes candies. 
